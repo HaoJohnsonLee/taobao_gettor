@@ -1,7 +1,7 @@
 # coding=utf-8
-import requests
 import re
-import DBhelper
+import requests
+from db import DBhelper
 
 
 def getHTMLText(url):
