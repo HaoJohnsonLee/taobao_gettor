@@ -2,12 +2,12 @@
 import pymysql
 
 
-connect=pymysql.Connect("*","*","*","*",charset='utf8')
-
+#connect=pymysql.Connect("*","*","*","*",charset='utf8')
+connect=pymysql.Connect("111.230.144.103","root","lihaojiang","goods",charset='utf8')
 
 def insert_info(info_price,info_name,info_paynum):
     cursor=connect.cursor()
-    sql="insert into nor_info(info_price, info_name, info_paynum) VALUES ('%s','%s','%s')" % \
+    sql="insert into nor_info(info_price, info_name, info_paynum) VALUES ('%s','%s','%d')" % \
         (info_price,info_name,info_paynum)
     try:
         cursor.execute(sql)
