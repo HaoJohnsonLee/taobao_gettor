@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="fuzi@111.230.144.103">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="fuzi">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="goods"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="items"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="sys"/>
+    <table id="9" parent="2" name="all_types"/>
+    <table id="10" parent="2" name="detail"/>
+    <column id="11" parent="9" name="type_id">
+      <Position>1</Position>
+      <DataType>int(5) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="12" parent="9" name="type_name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="13" parent="9" name="type_href">
+      <Position>3</Position>
+      <DataType>varchar(200)|0</DataType>
+    </column>
+    <key id="14" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>type_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="15" parent="10" name="info_id">
+      <Position>1</Position>
+      <Comment>id</Comment>
+      <DataType>int(10) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="16" parent="10" name="info_name">
+      <Position>2</Position>
+      <Comment>书名</Comment>
+      <DataType>varchar(500)|0</DataType>
+    </column>
+    <column id="17" parent="10" name="info_author">
+      <Position>3</Position>
+      <Comment>作者</Comment>
+      <DataType>varchar(40)|0</DataType>
+    </column>
+    <column id="18" parent="10" name="info_year">
+      <Position>4</Position>
+      <Comment>出版年份</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="19" parent="10" name="info_page">
+      <Position>5</Position>
+      <Comment>纸张</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="20" parent="10" name="info_way">
+      <Position>6</Position>
+      <Comment>刻印方式</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="21" parent="10" name="info_size">
+      <Position>7</Position>
+      <Comment>尺寸</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="22" parent="10" name="info_num">
+      <Position>8</Position>
+      <Comment>册数</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="23" parent="10" name="info_price">
+      <Position>9</Position>
+      <Comment>价格</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="24" parent="10" name="info_new">
+      <Position>10</Position>
+      <Comment>新旧程度</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="25" parent="10" name="info_sale_time">
+      <Position>11</Position>
+      <Comment>上架时间</Comment>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="26" parent="10" name="info_type_id">
+      <Position>12</Position>
+      <DataType>int(5) unsigned|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="10" name="info_publisher">
+      <Position>13</Position>
+      <Comment>出版商</Comment>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <index id="28" parent="10" name="typeID">
+      <ColNames>info_type_id</ColNames>
+    </index>
+    <key id="29" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>info_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="30" parent="10" name="typeID">
+      <ColNames>info_type_id</ColNames>
+      <RefSchemaName>fuzi</RefSchemaName>
+      <RefTableName>detail</RefTableName>
+      <RefColNames>info_id</RefColNames>
+      <OnUpdate>cascade</OnUpdate>
+      <OnDelete>cascade</OnDelete>
+    </foreign-key>
+  </database-model>
+</dataSource>

@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02eb51a6-765e-4b4d-b584-3de985cca4d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fuzi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/taobao.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/analysis.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DBhelper.py" afterPath="$PROJECT_DIR$/db/DBhelper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/DBhelper.py" afterPath="$PROJECT_DIR$/db/DBhelper.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,16 +53,16 @@
       <file leaf-file-name="DBhelper.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/DBhelper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="115">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
-                <marker date="1508856160520" expanded="true" signature="178:258" ph="insert into nor_info... " />
-                <marker date="1508856160520" expanded="true" signature="508:569" ph="insert into all_types... " />
-                <marker date="1508856160520" expanded="true" signature="508:570" ph="insert into all_types... " />
-                <marker date="1508856160520" expanded="true" signature="780:830" ph="select type_... all_types" />
-                <marker date="1508856160520" expanded="true" signature="1162:1331" ph="insert into detail... " />
-                <marker date="1508856160520" expanded="true" signature="1162:1393" ph="insert into detail... " />
-                <marker date="1508856160520" expanded="true" signature="1393:1508" ph="insert into detail... " />
+                <marker date="1508856231134" expanded="true" signature="177:257" ph="insert into nor_info... " />
+                <marker date="1508856231134" expanded="true" signature="507:568" ph="insert into all_types... " />
+                <marker date="1508856231134" expanded="true" signature="507:569" ph="insert into all_types... " />
+                <marker date="1508856231134" expanded="true" signature="779:829" ph="select type_... all_types" />
+                <marker date="1508856231134" expanded="true" signature="1161:1330" ph="insert into detail... " />
+                <marker date="1508856231134" expanded="true" signature="1161:1392" ph="insert into detail... " />
+                <marker date="1508856231134" expanded="true" signature="1392:1507" ph="insert into detail... " />
               </folding>
             </state>
           </provider>
@@ -343,11 +338,19 @@
       <option name="project" value="LOCAL" />
       <updated>1508817936831</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1508856164102</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508856164102</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -587,16 +590,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/DBhelper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <marker date="1508856160520" expanded="true" signature="178:258" ph="insert into nor_info... " />
-            <marker date="1508856160520" expanded="true" signature="508:569" ph="insert into all_types... " />
-            <marker date="1508856160520" expanded="true" signature="508:570" ph="insert into all_types... " />
-            <marker date="1508856160520" expanded="true" signature="780:830" ph="select type_... all_types" />
-            <marker date="1508856160520" expanded="true" signature="1162:1331" ph="insert into detail... " />
-            <marker date="1508856160520" expanded="true" signature="1162:1393" ph="insert into detail... " />
-            <marker date="1508856160520" expanded="true" signature="1393:1508" ph="insert into detail... " />
+            <marker date="1508856231134" expanded="true" signature="177:257" ph="insert into nor_info... " />
+            <marker date="1508856231134" expanded="true" signature="507:568" ph="insert into all_types... " />
+            <marker date="1508856231134" expanded="true" signature="507:569" ph="insert into all_types... " />
+            <marker date="1508856231134" expanded="true" signature="779:829" ph="select type_... all_types" />
+            <marker date="1508856231134" expanded="true" signature="1161:1330" ph="insert into detail... " />
+            <marker date="1508856231134" expanded="true" signature="1161:1392" ph="insert into detail... " />
+            <marker date="1508856231134" expanded="true" signature="1392:1507" ph="insert into detail... " />
           </folding>
         </state>
       </provider>
